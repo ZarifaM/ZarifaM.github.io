@@ -1,0 +1,93 @@
+@include media-md{
+    .menu-btn{
+        visibility: hidden;
+    }
+    .nav{
+        visibility: visible;
+
+        .menu-nav{
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            padding-top: 2rem;
+            background: transparent;
+            text-align: right;
+
+            &__item{
+                text-align: right;
+                display: inline;
+                padding-right:1.5rem;
+            }
+
+            &__link{
+                font-size: 1.2rem;
+                display: inline;
+                padding-right:1.5rem;
+            }
+        }
+
+       
+    }
+
+    .about__bio{
+        font-size: 1.5rem;;
+    }
+
+    .projects{
+        &__bio-image{
+            height:40vh;
+        }
+
+        &__items{
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .text-secondary{
+            font-size: 3rem;
+        }
+    }
+
+    .contact__list{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .home__name{
+        font-size: 3rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .about__bio-image{
+        height:60vh;
+    }
+}
+
+@include media-lg{
+    .projects{
+        &__items{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .contact__list{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .home__name{
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+    .about__bio-image{
+        height:60vh;
+    }
+    
+}
+
+@include media-xl{
+    .projects__bio-image{
+        height: 50vh;
+    }
+    
+    
+}
